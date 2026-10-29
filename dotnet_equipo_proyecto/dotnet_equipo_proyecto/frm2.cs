@@ -28,5 +28,13 @@ namespace dotnet_equipo_proyecto
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		double c=0;
+		void BtnCambiarClick(object sender, EventArgs e)
+		{
+			c++;
+			lbl1.Text="Dólares";
+			lbl2.Text="Pesos";			
+		}
 	}
 }
