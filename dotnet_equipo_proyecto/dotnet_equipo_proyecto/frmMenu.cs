@@ -1,8 +1,8 @@
 ﻿/*
  * Creado por SharpDevelop.
  * Usuario: kevin
- * Fecha: 28/10/2026
- * Hora: 7:55 a. m. 
+ * Fecha: 29/10/2026
+ * Hora: 11:49 a. m. 
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
@@ -13,11 +13,11 @@ using System.Windows.Forms;
 namespace dotnet_equipo_proyecto
 {
 	/// <summary>
-	/// Description of frm2.
+	/// Description of frmMenu.
 	/// </summary>
-	public partial class frm2 : Form
+	public partial class frmMenu : Form
 	{
-		public frm2()
+		public frmMenu()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -29,12 +29,11 @@ namespace dotnet_equipo_proyecto
 			//
 		}
 		
-		double c=0;
-		void BtnCambiarClick(object sender, EventArgs e)
+		void Button1Click(object sender, EventArgs e)
 		{
-			c++;
-			lbl1.Text="Dólares";
-			lbl2.Text="Pesos";			
+			frmDinero frm = new frmDinero();
+			frm.Show();
+			this.Hide();
 		}
 	}
 }

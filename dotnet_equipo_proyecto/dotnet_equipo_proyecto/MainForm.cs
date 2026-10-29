@@ -29,5 +29,12 @@ namespace dotnet_equipo_proyecto
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			frmMenu menu = new frmMenu();
+			menu.Show();
+			this.Hide();
+		}
 	}
 }

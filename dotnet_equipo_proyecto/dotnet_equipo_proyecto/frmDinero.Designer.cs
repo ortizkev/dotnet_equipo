@@ -1,14 +1,14 @@
 ﻿/*
  * Creado por SharpDevelop.
  * Usuario: kevin
- * Fecha: 28/10/2026
- * Hora: 7:55 a. m. 
+ * Fecha: 29/10/2026
+ * Hora: 12:14 p. m.
  * 
  * Para cambiar esta plantilla use Herramientas | Opciones | Codificación | Editar Encabezados Estándar
  */
 namespace dotnet_equipo_proyecto
 {
-	partial class frm2
+	partial class frmDinero
 	{
 		/// <summary>
 		/// Designer variable used to keep track of non-visual components.
@@ -37,8 +37,8 @@ namespace dotnet_equipo_proyecto
 		private void InitializeComponent()
 		{
 			this.lblTitulo = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.txt1 = new System.Windows.Forms.TextBox();
+			this.txt2 = new System.Windows.Forms.TextBox();
 			this.btnCalcular = new System.Windows.Forms.Button();
 			this.btnCambiar = new System.Windows.Forms.Button();
 			this.lbl1 = new System.Windows.Forms.Label();
@@ -55,20 +55,20 @@ namespace dotnet_equipo_proyecto
 			this.lblTitulo.Text = "\" Pesos a Dolares \"";
 			this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// textBox1
+			// txt1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(12, 71);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 1;
+			this.txt1.Location = new System.Drawing.Point(12, 71);
+			this.txt1.Name = "txt1";
+			this.txt1.Size = new System.Drawing.Size(100, 20);
+			this.txt1.TabIndex = 1;
 			// 
-			// textBox2
+			// txt2
 			// 
-			this.textBox2.Enabled = false;
-			this.textBox2.Location = new System.Drawing.Point(162, 70);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 20);
-			this.textBox2.TabIndex = 2;
+			this.txt2.Enabled = false;
+			this.txt2.Location = new System.Drawing.Point(162, 70);
+			this.txt2.Name = "txt2";
+			this.txt2.Size = new System.Drawing.Size(100, 20);
+			this.txt2.TabIndex = 2;
 			// 
 			// btnCalcular
 			// 
@@ -78,6 +78,7 @@ namespace dotnet_equipo_proyecto
 			this.btnCalcular.TabIndex = 3;
 			this.btnCalcular.Text = "Calcular";
 			this.btnCalcular.UseVisualStyleBackColor = true;
+			this.btnCalcular.Click += new System.EventHandler(this.BtnCalcularClick);
 			// 
 			// btnCambiar
 			// 
@@ -107,7 +108,7 @@ namespace dotnet_equipo_proyecto
 			this.lbl2.TabIndex = 6;
 			this.lbl2.Text = "Dolares";
 			// 
-			// frm2
+			// frmDinero
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,12 +117,11 @@ namespace dotnet_equipo_proyecto
 			this.Controls.Add(this.lbl1);
 			this.Controls.Add(this.btnCambiar);
 			this.Controls.Add(this.btnCalcular);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.txt2);
+			this.Controls.Add(this.txt1);
 			this.Controls.Add(this.lblTitulo);
-			this.Name = "frm2";
+			this.Name = "frmDinero";
 			this.Text = "Equivalencias";
-			this.Load += new System.EventHandler(this.Frm2Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
@@ -129,8 +129,8 @@ namespace dotnet_equipo_proyecto
 		private System.Windows.Forms.Label lbl1;
 		private System.Windows.Forms.Button btnCambiar;
 		private System.Windows.Forms.Button btnCalcular;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txt2;
+		private System.Windows.Forms.TextBox txt1;
 		private System.Windows.Forms.Label lblTitulo;
 	}
 }

@@ -47,9 +47,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm2.cs" />
-    <Compile Include="frm2.Designer.cs">
-      <DependentUpon>frm2.cs</DependentUpon>
+    <Compile Include="frmDinero.cs" />
+    <Compile Include="frmDinero.Designer.cs">
+      <DependentUpon>frmDinero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs" />
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs" />
     <Compile Include="MainForm.Designer.cs">
@@ -59,8 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frm2.resx">
-      <DependentUpon>frm2.cs</DependentUpon>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
