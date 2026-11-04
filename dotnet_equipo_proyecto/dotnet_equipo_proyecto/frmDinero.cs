@@ -67,5 +67,12 @@ namespace dotnet_equipo_proyecto
 				}
 			}
 		}
+		
+		void BtnAtrasClick(object sender, EventArgs e)
+		{
+			frmMenu menu = new frmMenu();
+			menu.Show();
+			this.Hide();			
+		}
 	}
 }

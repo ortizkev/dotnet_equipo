@@ -43,6 +43,7 @@ namespace dotnet_equipo_proyecto
 			this.btnCambiar = new System.Windows.Forms.Button();
 			this.lbl1 = new System.Windows.Forms.Label();
 			this.lbl2 = new System.Windows.Forms.Label();
+			this.btnAtras = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblTitulo
@@ -72,7 +73,7 @@ namespace dotnet_equipo_proyecto
 			// 
 			// btnCalcular
 			// 
-			this.btnCalcular.Location = new System.Drawing.Point(99, 106);
+			this.btnCalcular.Location = new System.Drawing.Point(56, 108);
 			this.btnCalcular.Name = "btnCalcular";
 			this.btnCalcular.Size = new System.Drawing.Size(75, 23);
 			this.btnCalcular.TabIndex = 3;
@@ -108,11 +109,22 @@ namespace dotnet_equipo_proyecto
 			this.lbl2.TabIndex = 6;
 			this.lbl2.Text = "Dolares";
 			// 
+			// btnAtras
+			// 
+			this.btnAtras.Location = new System.Drawing.Point(137, 108);
+			this.btnAtras.Name = "btnAtras";
+			this.btnAtras.Size = new System.Drawing.Size(75, 23);
+			this.btnAtras.TabIndex = 7;
+			this.btnAtras.Text = "Atras";
+			this.btnAtras.UseVisualStyleBackColor = true;
+			this.btnAtras.Click += new System.EventHandler(this.BtnAtrasClick);
+			// 
 			// frmDinero
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(278, 153);
+			this.ClientSize = new System.Drawing.Size(278, 146);
+			this.Controls.Add(this.btnAtras);
 			this.Controls.Add(this.lbl2);
 			this.Controls.Add(this.lbl1);
 			this.Controls.Add(this.btnCambiar);
@@ -125,6 +137,7 @@ namespace dotnet_equipo_proyecto
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Button btnAtras;
 		private System.Windows.Forms.Label lbl2;
 		private System.Windows.Forms.Label lbl1;
 		private System.Windows.Forms.Button btnCambiar;
