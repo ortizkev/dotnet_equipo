@@ -32,9 +32,19 @@ namespace dotnet_equipo_proyecto
 		
 		void Button1Click(object sender, EventArgs e)
 		{
-			frmMenu menu = new frmMenu();
-			menu.Show();
+			if(txtUsuario.Text == "admin" && txtContraseña.Text == "1234")
+			{
+				MessageBox.Show("¡Acceso Correcto!","Bienvenido",MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+			{
+				MessageBox.Show("Usuario o contraseña incorrectos.","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+			{
+			frmMenu frm = new frmMenu();
+			frm.Show();
 			this.Hide();
+			}
 		}
 	}
 }

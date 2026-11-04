@@ -35,5 +35,12 @@ namespace dotnet_equipo_proyecto
 			frm.Show();
 			this.Hide();
 		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			Form1 frm = new Form1();
+			frm.Show();
+			this.Hide();		
+		}
 	}
 }
